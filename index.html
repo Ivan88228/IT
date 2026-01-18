@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Artificial Intelligence | Portfolio</title>
+
+    <!-- ===== CSS ===== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle at top, #1a1f4a, #050816);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header img {
+            width: 90px;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #9fa8ff;
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 18px;
+            color: #dcdcff;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #111633;
+            width: 320px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(79, 209, 255, 0.25);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 35px rgba(79, 209, 255, 0.7);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px;
+            color: #4fd1ff;
+        }
+
+        .card p {
+            padding: 0 15px 20px;
+            font-size: 15px;
+            color: #e0e0e0;
+        }
+
+        .card a {
+            display: block;
+            margin: 0 15px 20px;
+            padding: 12px;
+            text-align: center;
+            background: linear-gradient(135deg, #4fd1ff, #8b5cf6);
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .card a:hover {
+            opacity: 0.85;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #9fa8ff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <!-- Логотип -->
+    <img src="https://i.postimg.cc/0yFTDQKF/AI-logo.png" alt="AI Logo">
+
+    <h1>ARTIFICIAL INTELLIGENCE</h1>
+    <p>Сучасні технології майбутнього</p>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main>
+    <div class="intro">
+        Штучний інтелект (ШІ) — це напрям комп’ютерних наук, який дозволяє машинам
+        аналізувати інформацію, навчатися та приймати рішення, подібно до людини.
+    </div>
+
+    <section class="cards">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="https://i.postimg.cc/YC6PG3k9/download.jpg" alt="AI Medicine">
+            <h3>ШІ в медицині</h3>
+            <p>
+                Штучний інтелект допомагає лікарям діагностувати хвороби,
+                аналізувати знімки та прогнозувати стан пацієнтів.
+            </p>
+            <a href="https://www.youtube.com/watch?v=V_2P5K4Xz1Y" target="_blank">
+                ▶ Дивитися відео
+            </a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="https://i.postimg.cc/PqF0TqT6/download.jpg" alt="AI Games">
+            <h3>ШІ в іграх</h3>
+            <p>
+                У відеоіграх ШІ створює розумних персонажів,
+                адаптує складність та покращує ігровий досвід.
+            </p>
+            <a href="https://www.youtube.com/watch?v=2ePf9rue1Ao" target="_blank">
+                ▶ Дивитися відео
+            </a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="https://i.postimg.cc/vBV2yLPs/download.jpg" alt="AI Education">
+            <h3>ШІ в освіті</h3>
+            <p>
+                Освітні платформи з ШІ персоналізують навчання
+                та допомагають студентам навчатися ефективніше.
+            </p>
+            <a href="https://www.youtube.com/watch?v=RzkD_rTEBYs" target="_blank">
+                ▶ Дивитися відео
+            </a>
+        </div>
+
+    </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    © 2026 | Інформаційний портал про штучний інтелект
+</footer>
+
+<!-- ===== JS ===== -->
+<script>
+    // Невеликий JS-ефект
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.border = '1px solid #4fd1ff';
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.border = 'none';
+        });
+    });
+</script>
+
+</body>
+</html>
